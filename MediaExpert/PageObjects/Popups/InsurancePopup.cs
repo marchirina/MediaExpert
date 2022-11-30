@@ -1,5 +1,5 @@
 ﻿using MediaExpert.Extensions;
-using MediaExpert.Helper;
+using MediaExpert.Helpers;
 using MediaExpert.WrapperFactory;
 using OpenQA.Selenium;
 

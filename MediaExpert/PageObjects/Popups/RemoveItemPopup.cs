@@ -1,5 +1,5 @@
 ﻿using System;
-using MediaExpert.Helper;
+using MediaExpert.Helpers;
 using OpenQA.Selenium;
 
 namespace MediaExpert.PageObjects.Popups

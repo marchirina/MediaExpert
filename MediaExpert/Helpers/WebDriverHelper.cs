@@ -2,7 +2,7 @@
 using MediaExpert.Extensions;
 using OpenQA.Selenium;
 
-namespace MediaExpert.Helper
+namespace MediaExpert.Helpers
 {
     public static class WebDriverHelper
     {

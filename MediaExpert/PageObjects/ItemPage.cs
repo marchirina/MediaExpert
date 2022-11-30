@@ -1,4 +1,4 @@
-﻿using MediaExpert.Helper;
+﻿using MediaExpert.Helpers;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 

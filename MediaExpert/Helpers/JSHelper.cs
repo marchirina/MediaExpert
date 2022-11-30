@@ -1,7 +1,7 @@
 ﻿using MediaExpert.WrapperFactory;
 using OpenQA.Selenium;
 
-namespace MediaExpert.Helper
+namespace MediaExpert.Helpers
 {
     public class JavaScriptHelper
     {
