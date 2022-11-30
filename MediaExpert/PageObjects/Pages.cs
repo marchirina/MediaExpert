@@ -16,5 +16,7 @@ namespace MediaExpert.PageObjects
         public static MainPage Main => GetPage<MainPage>();
         public static LogInPage Login => GetPage<LogInPage>();
         public static ProfilePage Profile => GetPage<ProfilePage>();
+        public static ItemPage Item => GetPage<ItemPage>();
+        public static BasketPage Basket => GetPage<BasketPage>();
     }
 }

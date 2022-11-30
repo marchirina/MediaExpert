@@ -1,5 +1,5 @@
 ﻿using System.Configuration;
-using Onliner.Helper;
+using MediaExpert.Helper;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
@@ -19,8 +19,8 @@ namespace MediaExpert.PageObjects
 
         public void LoginToPage()
         {
-            _userEmailTextBox.SendKeys(ConfigurationManager.AppSettings["EMAIL"]);
-            _passwordTextBox.SendKeys(ConfigurationManager.AppSettings["PASSWORD"]);
+            _userEmailTextBox.SendKeys(Configurations.ConfigurationManager.AppSetting["EMAIL"]);
+            _passwordTextBox.SendKeys(Configurations.ConfigurationManager.AppSetting["PASSWORD"]);
             JavaScriptHelper.ScrollToElement(_submitButton);
             _submitButton.Submit();
         }
