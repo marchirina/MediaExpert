@@ -10,7 +10,7 @@ namespace MediaExpert.WrapperFactory
     public class BrowserFactory
     {
         private static readonly IDictionary<string, IWebDriver> Drivers = new Dictionary<string, IWebDriver>();
-        private static IWebDriver driver;
+        private static IWebDriver? driver;
 
 
         public static IWebDriver Driver

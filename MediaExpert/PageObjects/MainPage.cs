@@ -24,7 +24,7 @@ namespace MediaExpert.PageObjects
 
         private IWebElement _openItemPageButton =>
             BrowserFactory.Driver.WaitForElement(By.XPath("//div[@class='search-list']//div[contains(@class,'search-list-right')]" +
-                                                          "//div[@class='search-list-offers']/a[contains(@class,'search-list-item']"));
+                                                          "//div[@class='search-list-offers']/a[contains(@class,'search-list-item')]"));
 
         [FindsBy(How = How.XPath, Using = "//div[contains(@class,'utility-nav-item')]/span[contains(text(),'Koszyk')]")] 
         private IWebElement _basketButton;

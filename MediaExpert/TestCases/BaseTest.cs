@@ -15,8 +15,8 @@ namespace MediaExpert.TestCases
             BrowserFactory.LoadApplication(Configurations.ConfigurationManager.AppSetting["URL"]);
             BrowserFactory.Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(8);
             Pages.Main.OpenLoginPage();
-            Pages.Login.LoginToPage();
             Pages.Main.CloseCookieContent();
+            Pages.Login.LoginToPage();
             Pages.Profile.IsHeadlineWithNameDisplayed("Witaj MediaExpert Test");
         }
 

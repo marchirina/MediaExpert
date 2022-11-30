@@ -22,7 +22,9 @@
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.3.0" />
     <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
-    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="107.0.5304.6200" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="108.0.5359.2200" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +39,12 @@
     <None Remove="Configurations\" />
     <None Remove="PageObjects\" />
     <None Remove="TestCases\" />
+    <None Remove="Microsoft.Extensions.Configuration.Json" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="PageObjects\Popups\" />
+    <None Remove="TestCases\Authorisation\" />
+    <None Remove="TestCases\Catalog\" />
+    <None Remove="TestCases\UserAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WrapperFactory\" />
@@ -45,5 +53,14 @@
     <Folder Include="Configurations\" />
     <Folder Include="PageObjects\" />
     <Folder Include="TestCases\" />
+    <Folder Include="PageObjects\Popups\" />
+    <Folder Include="TestCases\Authorisation\" />
+    <Folder Include="TestCases\Catalog\" />
+    <Folder Include="TestCases\UserAccount\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Configurations\Environment.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
