@@ -2,7 +2,7 @@
 using MediaExpert.PageObjects;
 
 
-namespace MediaExpert.TestCases.Authorisation
+namespace MediaExpert.TestCases.Authorization
 {
     public class SignIn : BaseTest
     {

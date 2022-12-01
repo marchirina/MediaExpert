@@ -1,6 +1,7 @@
 ﻿using MediaExpert.WrapperFactory;
 using MediaExpert.Extensions;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace MediaExpert.Helpers
 {
@@ -8,7 +9,14 @@ namespace MediaExpert.Helpers
     {
         public static void WaitAndClick(By by)
         {
-            BrowserFactory.Driver.WaitForElement(by).Click();
-        }
+            var wait = new WebDriverWait(BrowserFactory.Driver, TimeSpan.FromSeconds(30));
+            wait.IgnoreExceptionTypes(typeof(ElementClickInterceptedException));
+            wait.Until(drv =>
+            {
+                drv.WaitForElement(by).Click();
+
+                return true;
+            });
     }
+}
 }
